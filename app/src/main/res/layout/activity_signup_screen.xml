@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="149dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:text="Kayıt Ol"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="6dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:hint="Enter your username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:text="Sign Up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@null"
+                android:padding="12dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You already have an account?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:text=" Log in!"
+            android:id="@+id/textLoginLink"
+            android:textSize="14sp"
+            android:textColor="#1E90FF"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>
